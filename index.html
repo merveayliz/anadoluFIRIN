@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anadolu Fırını | Döner, Pide & Lahmacun</title>
+    <meta name="description" content="Odun ateşinde döner, pide, lahmacun ve kebap lezzetleri. Rezervasyon, yol tarifi ve online sipariş seçenekleri.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Anadolu Fırını ana sayfa">
+        <span class="brand-mark">AF</span>
+        <span>
+          <strong>Anadolu Fırını</strong>
+          <small>Pide & Lahmacun Salonu</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Ana menü">
+        <a href="#home" data-i18n="nav_home">Ana Sayfa</a>
+        <a href="#menu" data-i18n="nav_menu">Menü</a>
+        <a href="#about" data-i18n="nav_about">Hakkımızda</a>
+        <a href="#gallery" data-i18n="nav_gallery">Galeri</a>
+        <a href="#reservation" data-i18n="nav_reservation">Rezervasyon</a>
+        <a href="#contact" data-i18n="nav_contact">İletişim</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" aria-label="Dil seçimi">
+          <button class="active" type="button" data-lang="tr">TR</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+        <a class="order-mini" href="#shops" data-i18n="online_order">Online Sipariş</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <picture>
+          <source media="(max-width: 760px)" srcset="img/1.jpg">
+          <img src="img/11.jpg" alt="Taş fırında sıcak servis edilen döner ve pide">
+        </picture>
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow" data-i18n="hero_eyebrow">Odun Ateşinde Gerçek Lezzet</p>
+          <h1 data-i18n="hero_title">Anadolu Fırını'nda döner, pide ve lahmacun keyfi</h1>
+          <p data-i18n="hero_text">Günlük hazırlanan etler, taş fırın lezzeti ve sıcak servisle sofranıza klasik Anadolu tadı getiriyoruz.</p>
+          <div class="hero-buttons">
+            <a class="btn primary" href="#shops" data-i18n="order_now">Online Sipariş Ver</a>
+            <a class="btn ghost" href="#reservation" data-i18n="book_table">Masa Rezervasyonu</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-strip" aria-label="Öne çıkan özellikler">
+        <div>
+          <span>
+
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 3.5z"/></svg>
+          </span>
+          <strong data-i18n="feature_fire">Odun Ateşinde</strong>
+          <small data-i18n="feature_fire_text">Taş fırın tadı</small>
+        </div>
+        <div>
+          <span>
+            
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+          </span>
+          <strong data-i18n="feature_fresh">Günlük Malzeme</strong>
+          <small data-i18n="feature_fresh_text">Taze ve özenli</small>
+        </div>
+        <div>
+          <span>
+            
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 18V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12M4 18h16M7 21h10"/></svg>
+          </span>
+          <strong data-i18n="feature_master">Usta Şefler</strong>
+          <small data-i18n="feature_master_text">Deneyimli ekip</small>
+        </div>
+        <div>
+          <span>
+            
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </span>
+          <strong data-i18n="feature_fast">Hızlı Servis</strong>
+          <small data-i18n="feature_fast_text">Sıcak teslimat</small>
+        </div>
+      </section>
+
+      
+      <section class="section" id="menu">
+        <div class="section-title">
+          <p data-i18n="menu_eyebrow">Menü</p>
+          <h2 data-i18n="menu_title">Kategoriler</h2>
+        </div><div class="category-grid">
+          <button type="button" class="category-card" data-open-modal="modal-lahmacun">
+            <img src="img/6.jpg" alt="Lahmacun">
+            <span>Lahmacunlar</span>
+            <small>6 çeşit</small>
+          </button>
+          <button type="button" class="category-card" data-open-modal="modal-doner">
+            <img src="img/2.jpg" alt="Döner tabağı">
+            <span>Dönerler</span>
+            <small>8 çeşit</small>
+          </button>
+          <button type="button" class="category-card" data-open-modal="modal-pide">
+            <img src="img/9.jpg" alt="Pide">
+            <span>Pideler</span>
+            <small>10 çeşit</small>
+          </button>
+          <a class="category-card" href="#drinks">
+            <img src="img/13.jpg" alt="İçecekler">
+            <span>İçecekler</span>
+            <small>Soğuk & sıcak</small>
+          </a>
+          <button type="button" class="category-card" data-open-modal="modal-dessert">
+            <img src="img/15.jpg" alt="Tatlı">
+            <span>Tatlılar</span>
+            <small>Günlük</small>
+          </button>
+        </div>
+
+        <div class="menu-layout">
+          <div class="menu-list">
+            <div class="menu-heading" id="lahmacun">
+              <h3 data-i18n="popular_title">Popüler Ürünler</h3>
+              <span data-i18n="popular_hint">En çok tercih edilenler</span>
+            </div>
+            
+            <article class="product-card">
+              <img src="img/6.jpg" alt="Özel lahmacun">
+              <div>
+                <h4>Özel Lahmacun</h4>
+                <p>İnce hamur, özel kıyma, bol baharat</p>
+                <strong>180 TL</strong>
+              </div>
+              <button type="button" aria-label="Özel Lahmacun ekle">+</button>
+            </article>
+            <article class="product-card">
+              <img src="img/9.jpg" alt="Kaşarlı pide">
+              <div>
+                <h4>Kaşarlı Pide</h4>
+                <p>Taş fırında bol kaşarlı klasik</p>
+                <strong>190 TL</strong>
+              </div>
+              <button type="button" aria-label="Kaşarlı Pide ekle">+</button>
+            </article>
+            <article class="product-card" id="doner">
+              <img src="img/2.jpg" alt="Et döner">
+              <div>
+                <h4>Et Döner</h4>
+                <p>Pilav, köz biber ve özel sos ile</p>
+                <strong>240 TL</strong>
+              </div>
+              <button type="button" aria-label="Et Döner ekle">+</button>
+            </article>
+          </div>
+        </div>
+
+
+      <section class="section drinks" id="drinks">
+        <div class="section-title">
+          <p data-i18n="drinks_eyebrow">İçecekler</p>
+          <h2 data-i18n="drinks_title">Sıcak ve soğuk seçenekler</h2>
+        </div>
+        <div class="drink-grid">
+          <article><img src="img/14.jpg" alt="Ayran"><h4>Ayran</h4><strong>30 TL</strong></article>
+          <article><img src="img/13.jpg" alt="Şalgam"><h4>7up</h4><strong>35 TL</strong></article>
+          <article><img src="img/15.jpg" alt="Kola"><h4>Kola</h4><strong>40 TL</strong></article>
+          <article><img src="img/16.jpg" alt="Türk kahvesi"><h4>Türk Kahvesi</h4><strong>50 TL</strong></article>
+        </div>
+      </section>
+
+      <section class="shops" id="shops">
+        <div>
+          <p class="eyebrow" data-i18n="shops_eyebrow">Online Sipariş</p>
+          <h2 data-i18n="shops_title">Dükkanlarımızdan sipariş ver</h2>
+          <p data-i18n="shops_text">Yemeksepeti ve Trendyol mağaza bağlantılarını buradan gösterebilirsin.</p>
+        </div>
+        <div class="shop-buttons">
+          <a class="shop yemek" href="https://www.yemeksepeti.com/" target="_blank" rel="noopener">Yemeksepeti</a>
+          <a class="shop trendyol" href="https://www.trendyol.com/yemek" target="_blank" rel="noopener">Trendyol Yemek</a>
+        </div>
+      </section>
+
+      <section class="split-section" id="reservation">
+        <form class="reservation-form">
+          <div class="section-title left">
+            <p data-i18n="reservation_eyebrow">Rezervasyon</p>
+            <h2 data-i18n="reservation_title">Masanı ayır</h2>
+          </div>
+          <label><span data-i18n="name">Ad Soyad</span><input type="text" placeholder="Adınız"></label>
+          <label><span data-i18n="phone">Telefon</span><input type="tel" placeholder="0555 555 55 55"></label>
+          <div class="two-cols">
+            <label><span data-i18n="date">Tarih</span><input type="date" value="2026-06-24"></label>
+            <label><span data-i18n="time">Saat</span><input type="time" value="19:00"></label>
+          </div>
+          <label><span data-i18n="people">Kişi Sayısı</span><select><option>2 Kişi</option><option selected>4 Kişi</option><option>6 Kişi</option></select></label>
+          <button class="btn primary" type="button" data-i18n="reserve_button">Rezervasyon Yap</button>
+        </form>
+
+        <div class="about-card" id="about">
+          <img src="img/17.jpg" alt="Restoran iç mekanı">
+          <div>
+            <p class="eyebrow" data-i18n="about_eyebrow">Hakkımızda</p>
+            <h2 data-i18n="about_title">25 yıllık tecrübe, değişmeyen lezzet</h2>
+            <p data-i18n="about_text">Mahalle sıcaklığını, taş fırın geleneğini ve usta elini aynı sofrada buluşturuyoruz.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <div class="section-title">
+          <p data-i18n="gallery_eyebrow">Galeri</p>
+          <h2 data-i18n="gallery_title">Fırından ve salondan kareler</h2>
+        </div>
+        <div class="gallery-row">
+          <img src="img/1.jpg" alt="Fırın lezzeti">
+          <img src="img/2.jpg" alt="Servis tabağı">
+          <img src="img/6.jpg" alt="Lahmacun">
+          <img src="img/9.jpg" alt="Pide">
+          <img src="img/17.jpg" alt="Restoran">
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-info">
+          <p class="eyebrow" data-i18n="contact_eyebrow">İletişim</p>
+          <h2 data-i18n="contact_title">Bize ulaşın</h2>
+          <p><strong data-i18n="address_label">Adres</strong><br>Atatürk Cad. No:15, İstanbul</p>
+          <p><strong data-i18n="phone_label">Telefon</strong><br><a href="tel:+905555555555">0555 555 55 55</a></p>
+          <p><strong data-i18n="hours_label">Çalışma Saatleri</strong><br>09:00 - 23:00</p>
+          <div class="map-buttons">
+            <a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=Ataturk%20Cad.%20No%2015%20Istanbul" target="_blank" rel="noopener">Google Maps</a>
+            <a class="btn dark" href="https://maps.apple.com/?q=Ataturk%20Cad.%20No%2015%20Istanbul" target="_blank" rel="noopener">Apple Maps</a>
+          </div>
+        </div>
+        <iframe title="Harita" src="https://www.openstreetmap.org/export/embed.html?bbox=28.944%2C41.005%2C29.05%2C41.06&amp;layer=mapnik&amp;marker=41.032%2C28.98"></iframe>
+      </section>
+
+
+
+      <div class="category-modal" id="modal-lahmacun" role="dialog" aria-hidden="true">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button type="button" class="close-modal-btn" aria-label="Kapat">✕</button>
+        <h3>Lahmacunlar</h3>
+        <div class="modal-products">
+          <article class="product-card">
+            <img src="img/6.jpg" alt="Özel lahmacun">
+            <div>
+              <h4>Özel Lahmacun</h4>
+              <p>İnce hamur, özel kıyma, bol baharat</p>
+              <strong>180 TL</strong>
+            </div>
+            <button type="button" aria-label="Ekle">+</button>
+          </article>
+          <article class="product-card">
+            <img src="img/6.jpg" alt="Fındık lahmacun">
+            <div>
+              <h4>Fındık Lahmacun</h4>
+              <p>Çıtır çıtır mini lahmacun başlangıç</p>
+              <strong>70 TL</strong>
+            </div>
+            <button type="button" aria-label="Ekle">+</button>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="category-modal" id="modal-doner" role="dialog" aria-hidden="true">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button type="button" class="close-modal-btn" aria-label="Kapat">✕</button>
+        <h3>Dönerler</h3>
+        <div class="modal-products">
+          <article class="product-card">
+            <img src="img/2.jpg" alt="Et döner">
+            <div>
+              <h4>Et Döner Tabağı</h4>
+              <p>Pilav, köz biber ve özel sos ile</p>
+              <strong>240 TL</strong>
+            </div>
+            <button type="button" aria-label="Ekle">+</button>
+          </article>
+          <article class="product-card">
+            <img src="img/2.jpg" alt="Dürüm döner">
+            <div>
+              <h4>Lavaş Dürüm Döner</h4>
+              <p>Özel soslu lavaşa sarılı yaprak et</p>
+              <strong>200 TL</strong>
+            </div>
+            <button type="button" aria-label="Ekle">+</button>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="category-modal" id="modal-dessert" role="dialog" aria-hidden="true">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button type="button" class="close-modal-btn" aria-label="Kapat">✕</button>
+        <h3>Tatlılar</h3>
+        <div class="modal-products">
+          <article class="product-card">
+            <img src="img/15.jpg" alt="Fırın Sütlaç">
+            <div>
+              <h4>Fırın Sütlaç</h4>
+              <p>Üzeri nar gibi kızarmış klasik lezzet</p>
+              <strong>90 TL</strong>
+            </div>
+            <button type="button" aria-label="Ekle">+</button>
+          </article>
+        </div>
+      </div>
+    </div>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Mobil menü">
+      <a href="#home"><span>⌂</span><small data-i18n="nav_home">Ana Sayfa</small></a>
+      <a href="#menu"><span>▦</span><small data-i18n="nav_menu">Menü</small></a>
+      <a href="#shops"><span>🛒</span><small data-i18n="online_order_short">Sipariş</small></a>
+      <a href="#reservation"><span>◴</span><small data-i18n="nav_reservation">Rezervasyon</small></a>
+      <a href="#contact"><span>⌖</span><small data-i18n="nav_contact">İletişim</small></a>
+    </nav>
+
+    <script src="script.js"></script>
+  </body>
+</html>
